@@ -21,7 +21,8 @@ body {
   /* align-items - arrange item based on cross axis */
   align-items: center;
   /* stretch center flex-start flex-end baseline */
-  align-content: space-around; /* manages space between rows*/
+  /* align-content: flex-start;  */
+  /*manages space between rows*/
   /* flex-start flex-end center stretch space-between space-around */
 }
 .box {
@@ -51,5 +52,11 @@ body {
 #box4 {
   /* flex-shrink: 4; */
   /* This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third */
-  flex: 0 0 200px;
+  /* flex: 0 0 200px; */
+}
+
+/* align-self: align itself around cross axis, diabled align-content from parent */
+
+#box5 {
+  align-self: flex-end;
 }
