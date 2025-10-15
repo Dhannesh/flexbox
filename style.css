@@ -31,12 +31,10 @@ body {
   /* margin-inline: 10px; */
   width: 100px;
 }
-#box2{
-    height: 200px;
-}
 #box1{
-    height: 100px;
+    /* larger the value will placed last default is 0 for all children */
+    order: 1; 
 }
 #box3{
-    height: 150px;
+    order: 2;
 }
