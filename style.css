@@ -18,6 +18,11 @@ body {
   flex-flow: wrap row; /*shortcut of flex-wrap and flex-direction */
   justify-content:center; /*justify content on main axis*/
   /* space-around, space-between space-evenly flex-start flex-end center */
+  /* align-items - arrange item based on cross axis */
+  align-items: center;
+  /* stretch center flex-start flex-end baseline */
+  align-content: space-around; /* manages space between rows*/
+  /* flex-start flex-end center stretch space-between space-around */
 }
 .box {
   border: 2px solid green;
@@ -25,4 +30,13 @@ body {
   /* margin-block: 10px; */
   /* margin-inline: 10px; */
   width: 100px;
+}
+#box2{
+    height: 200px;
+}
+#box1{
+    height: 100px;
+}
+#box3{
+    height: 150px;
 }
