@@ -15,8 +15,8 @@ body {
   flex-direction: row; /*row row-reverse column column-reverse*/
   flex-wrap: wrap; /* nowrap, wrap, wrap-reverse*/
   gap: 10px; /*row-gap, column-gap*/
-  flex-flow: wrap row; /*shortcut of flex-wrap and flex-direction */
-  justify-content:center; /*justify content on main axis*/
+  flex-flow: nowrap row; /*shortcut of flex-wrap and flex-direction */
+  justify-content: center; /*justify content on main axis*/
   /* space-around, space-between space-evenly flex-start flex-end center */
   /* align-items - arrange item based on cross axis */
   align-items: center;
@@ -31,10 +31,21 @@ body {
   /* margin-inline: 10px; */
   width: 100px;
 }
-#box1{
-    /* larger the value will placed last default is 0 for all children */
-    order: 1; 
+#box1 {
+  /* larger the value will placed last default is 0 for all children */
+  /* grow will takes blank space, default is 0 */
+  /* flex-shrink: This defines the ability for a flex item to shrink if necessary. default 1, works with no-wrap in parent container */
+  order: 1;
+  flex-grow: 1;
 }
-#box3{
-    order: 2;
+#box3 {
+  order: 2;
+  flex-grow: 2;
+}
+
+#box2 {
+  flex-shrink: 1;
+}
+#box4 {
+  flex-shrink: 4;
 }
