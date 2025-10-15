@@ -15,7 +15,9 @@ body {
   flex-direction: row; /*row row-reverse column column-reverse*/
   flex-wrap: wrap; /* nowrap, wrap, wrap-reverse*/
   gap: 10px; /*row-gap, column-gap*/
-  /* flex-flow: wrap row; shortcut of flex-wrap and flex-direction */
+  flex-flow: wrap row; /*shortcut of flex-wrap and flex-direction */
+  justify-content:center; /*justify content on main axis*/
+  /* space-around, space-between space-evenly flex-start flex-end center */
 }
 .box {
   border: 2px solid green;
