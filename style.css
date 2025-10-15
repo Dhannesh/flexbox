@@ -31,7 +31,7 @@ body {
   /* margin-inline: 10px; */
   width: 100px;
   /* This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or auto. */
-  flex-basis: 20%;
+  /* flex-basis: 20%; */
 }
 #box1 {
   /* larger the value will placed last default is 0 for all children */
@@ -50,4 +50,6 @@ body {
 }
 #box4 {
   /* flex-shrink: 4; */
+  /* This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third */
+  flex: 0 0 200px;
 }
