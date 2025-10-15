@@ -13,10 +13,13 @@ body {
   border: 2px solid red;
   display: flex;
   flex-direction: row; /*row row-reverse column column-reverse*/
+  flex-wrap: wrap; /* nowrap, wrap, wrap-reverse*/
+  gap: 10px; /*row-gap, column-gap*/
 }
 .box {
   border: 2px solid green;
-  margin: 10px 0;
+  /* margin: 10px; */
   /* margin-block: 10px; */
   /* margin-inline: 10px; */
+  width: 100px;
 }
